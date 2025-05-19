@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Untitled</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="app">
+  <div class="chat-header">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png" alt="Avatar" class="avatar">
+    <span class="name">Grit</span>
+  </div>
+  <div class="chat-area" id="chat-area"></div>
+  <div class="chat-inputs">
+    <input type="text" id="message-input" placeholder="Nachricht eingeben...">
+    <button onclick="sendMessage()">Senden</button>
+    <button onclick="deleteLastMessage()">Letzte Nachricht löschen</button>
+    <button onclick="downloadChat()">Download</button>
+  </div>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
